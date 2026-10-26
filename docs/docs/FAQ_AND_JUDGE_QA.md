@@ -92,8 +92,8 @@ No, unless stated in Results. Our experiments simulate the restriction on datase
 **Q30. Why not blockchain, given the theme?**  
 No verified requirement for it; adds complexity. We'd revisit if the official statement requires it.
 
-**Q31. What happens with malformed packets?**  
-Parser skips and counts them; fuzz/malformed tests are planned. Status in the audit.
+**Q31. Why not use blockchain, given the theme is Blockchain & Cybersecurity?**  
+The problem statement is about detecting threats in one-way traffic, and we found no requirement for a ledger (portal text to be rechecked). A distributed ledger would add latency and complexity without helping detection. Where integrity matters we propose a simple hash-chained alert log, which is optional and planned, not claimed as built.
 
 **Q32. How do you avoid alert floods?**  
 Deduplication, aggregation per window and rate limits (planned).
@@ -103,4 +103,13 @@ PCAPs and IPs are sensitive; we use public/synthetic data and follow SECURITY.md
 
 **Q34. What was actually implemented?**  
 Answer strictly from PROJECT_AUDIT.md and RESULTS.md. Never from this Q&A.
+
+**Q35. Is your hash-chained log a blockchain?**  
+No. It is a tamper-evident log: each alert includes the hash of the previous one. There is no consensus or distributed network. It detects edits after storage, but only if the latest hash is kept somewhere the attacker cannot write.
+
+**Q36. Can an attacker with database access just rebuild the chain?**  
+Yes, unless the head hash is anchored externally (offline record or signature with a key outside the enclave). We state this limit; the anchoring choice is undecided.
+
+**Q37. Does the hash chain prove an alert is correct?**  
+No. It only shows the stored alert was not changed afterwards. Correctness comes from detector evaluation.
 

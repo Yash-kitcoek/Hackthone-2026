@@ -23,6 +23,8 @@ Separate from REST API wrappers. Versioned via `schema_version`.
 | explanation | string | yes | human text |
 | dataset_or_capture_id | string | yes | |
 | evaluation_kind | enum `real`, `synthetic`, `live` | yes | |
+| prev_hash | string (64 hex) | no (optional extension) | hash of previous stored alert; genesis = 64 zeros |
+| alert_hash | string (64 hex) | no (optional extension) | SHA-256(prev_hash ‖ canonical JSON without hash fields) |
 
 ## Validation rules
 confidence ∈ [0,1]; `calibrated_probability` only if calibration report exists; `evidence_features` non-empty; timestamps UTC; IPs valid or null; unknown fields rejected (version bump to add).
@@ -54,3 +56,6 @@ Semantic: additive optional fields → minor; breaking → major. Store `schema_
   "evaluation_kind": "synthetic"
 }
 ```
+
+## Optional integrity fields (PLANNED)
+If the hash-chain extension is enabled, `prev_hash` and `alert_hash` must both be present and are set by the store, not by detectors. Canonical JSON: sorted keys, UTF-8, no extra whitespace. Adding these optional fields is a **minor** version bump (1.1). Design details and limits: [UNIQUE_INNOVATION.md](UNIQUE_INNOVATION.md#5-optional-tamper-evident-alert-log-hash-chain).

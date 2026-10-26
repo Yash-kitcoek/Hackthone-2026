@@ -11,4 +11,6 @@
 | Packaging | Docker, Docker Compose | Isolation | PLANNED |
 | Tests | pytest, httpx, React Testing Library | Standard | PLANNED |
 
-Excluded unless a verified requirement appears: Kafka, Kubernetes, blockchain, LLM chatbot, multi-agent orchestration. (The SIH theme mentions blockchain; no requirement for it has been verified — `UNVERIFIED`.)
+Excluded unless a verified requirement appears: Kafka, Kubernetes, a distributed-ledger/blockchain network, LLM chatbot, multi-agent orchestration.
+
+Theme note: the SIH theme is Blockchain & Cybersecurity, but no blockchain requirement in the problem statement has been verified (`UNVERIFIED` — read the portal text). Optional extension: SHA-256 hash-chained alert log (Python `hashlib`, no extra service) — `PLANNED`, see [UNIQUE_INNOVATION.md](UNIQUE_INNOVATION.md#5-optional-tamper-evident-alert-log-hash-chain).

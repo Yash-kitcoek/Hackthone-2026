@@ -17,6 +17,7 @@ All tests `PLANNED`. Keep result categories separate.
 | Read-only enforcement | egress/FS tests in [SECURITY_AND_ISOLATION.md](SECURITY_AND_ISOLATION.md) | integration |
 | Failure handling | DB down, queue full, bad model file | integration |
 | Load | sustained replay at increasing rates | benchmark |
+| Alert integrity (if hash chain built) | valid chain passes; modified/deleted/reordered alert detected at correct index | unit |
 
 Commands (template): `pytest -q`, `pytest -m integration`, `npm test`.
 Report each category in a separate table in [RESULTS.md](RESULTS.md).

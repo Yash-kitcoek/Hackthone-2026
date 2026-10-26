@@ -3,7 +3,7 @@
 > **Status banner:** These documents were generated **without access to the source repository**. Every capability is `PLANNED` or `UNVERIFIED`, and every metric is `NOT YET MEASURED`. Run the audit in [docs/PROJECT_AUDIT.md](docs/PROJECT_AUDIT.md) first and update statuses.
 
 - **Problem ID:** SIH26145 · **Sponsor:** NTRO · **Category:** Software
-- **Theme:** `UNVERIFIED` (check the official SIH 2026 catalogue wording)
+- **Theme:** Blockchain & Cybersecurity (confirm exact wording on the SIH 2026 portal). The problem statement itself is AI-based traffic threat detection; no blockchain component is known to be required. An *optional* tamper-evident alert log (hash chain) is documented in [docs/UNIQUE_INNOVATION.md](docs/UNIQUE_INNOVATION.md#5-optional-tamper-evident-alert-log-hash-chain).
 
 ## Problem
 Some sensitive networks only allow traffic to be *observed* in one direction (TAP, SPAN port, or data diode). Conventional IDS tools often rely on seeing both sides of a conversation. We need to detect threats from one-way copies of traffic, without ever sending anything back.
@@ -17,6 +17,7 @@ Six detector classes: DDoS, botnet beaconing, DGA/DNS tunnelling, encrypted-sess
 1. Directional-blindness evaluation (bidirectional vs unidirectional vs strict feature availability).
 2. Read-only architecture with testable isolation.
 3. Evidence-based, explainable alerts.
+4. *(Optional, PLANNED)* Tamper-evident alert log using a hash chain.
 
 ## Architecture preview
 See [docs/diagrams/README.md](docs/diagrams/README.md) (10 Mermaid diagrams).

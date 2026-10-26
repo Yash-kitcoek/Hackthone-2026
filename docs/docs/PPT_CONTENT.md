@@ -7,7 +7,7 @@ Forbidden claims: perfect accuracy, zero false positives, production readiness, 
 ---
 ### 1. Title
 - Message: Passive threat detection when you can only watch one direction.
-- Bullets: SIH26145 · NTRO · Software · Team name/members · Theme (verify)
+- Bullets: SIH26145 · NTRO · Software · Team name/members · Theme: Blockchain & Cybersecurity (confirm wording)
 - Visual: logo + one-line tagline
 - Notes: "We built a system that detects cyber threats from one-way copies of network traffic."
 - Evidence: official problem ID. Don't show: unverified theme wording.
@@ -53,7 +53,7 @@ Forbidden claims: perfect accuracy, zero false positives, production readiness, 
 
 ### 8. Innovation and read-only enforcement
 - Message: We measure the cost of one-way visibility and prove isolation by test.
-- Bullets: Directional-blindness evaluation · No-egress ingestion · Evidence alerts · Explainability
+- Bullets: Directional-blindness evaluation · No-egress ingestion · Evidence alerts · Explainability · *(optional, only if built)* hash-chained tamper-evident alert log
 - Visual: diagram 8 + egress test output
 - Notes: Say "simulated restriction" unless hardware was used.
 - Evidence: experiment results, test output.
@@ -78,7 +78,7 @@ Forbidden claims: perfect accuracy, zero false positives, production readiness, 
 
 ### 12. Tech stack
 - Bullets: Python · Scapy/Zeek · LightGBM/scikit-learn · FastAPI · React · Docker
-- Visual: stack diagram. Note: no blockchain/Kafka/K8s/LLM unless verified need.
+- Visual: stack diagram. Note: no distributed ledger/Kafka/K8s/LLM unless a verified need. Theme link to blockchain, if shown: hash-chained alert log only, and only if implemented and tested.
 
 ### 13. Feasibility and plan
 - Bullets: Public datasets · Single-host Docker · Phased roadmap · Build order scan→DDoS→beacon→exfil→DGA→TLS

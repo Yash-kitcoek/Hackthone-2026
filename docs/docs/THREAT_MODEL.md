@@ -18,6 +18,7 @@ Alert integrity, captured metadata confidentiality, enclave isolation, model int
 | Egress/exfil from enclave | Compromised service calls out | Internal network, no egress rules, tested |
 | API abuse | Unauthenticated access to alerts | Auth, bind to management interface only |
 | Sensitive data exposure | PCAPs in repo | `.gitignore`, SECURITY.md |
+| Alert tampering after storage | Insider edits/deletes alerts | Optional hash chain with externally anchored head hash (limits in UNIQUE_INNOVATION.md) |
 
 ## Out of scope
 Endpoint compromise detection, payload decryption, active response, physical attacks.

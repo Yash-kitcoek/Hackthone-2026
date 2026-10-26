@@ -8,6 +8,7 @@
 1. Measure how much detection performance is lost when reverse traffic is unavailable.
 2. Read-only architecture with a test that proves no egress from ingestion.
 3. Alerts that carry the evidence features that triggered them.
+4. *(Optional, planned)* A hash-chained, tamper-evident alert log, the honest link to the Blockchain & Cybersecurity theme.
 
 **Honest status:** Documentation baseline only. Implementation, tests and metrics are `UNVERIFIED` / `NOT YET MEASURED`.
 

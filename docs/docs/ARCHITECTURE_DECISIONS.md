@@ -10,6 +10,7 @@
 | ADR-6 | FastAPI + React | Typed API, common stack | Flask, Streamlit | Proposed |
 | ADR-7 | Alert-only, no active response | Policy/safety for one-way deployments | Auto-block | Fixed |
 | ADR-8 | SQLite first | Simple; upgrade if needed | PostgreSQL | Proposed |
-| ADR-9 | No blockchain / LLM / Kubernetes | No verified requirement; adds risk | — | Fixed unless requirement appears |
+| ADR-9 | No distributed ledger / LLM / Kubernetes | Theme is Blockchain & Cybersecurity, but no verified requirement for a ledger; adds risk | — | Fixed unless requirement appears |
+| ADR-10 | Optional hash-chained alert log (no ledger network) | Gives tamper evidence for alerts at near-zero cost; links to the theme honestly | Public-chain anchoring, signed logs only | Proposed, optional |
 
 Add new ADRs with: context, decision, consequences, date.

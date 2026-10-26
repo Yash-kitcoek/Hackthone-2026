@@ -16,5 +16,6 @@
 | Dashboard | Alerts, evidence | PLANNED | — |
 | Isolation test | Egress blocked | PLANNED | — |
 | Directional-blindness harness | Three configs | PLANNED | — |
+| Hash-chained alert log | Tamper evidence (optional) | PLANNED (optional) | — |
 
 Update this table only with evidence (test or run log).

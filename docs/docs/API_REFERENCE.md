@@ -37,6 +37,9 @@ Request: `{"capture_id":"synthetic-01","speed":1.0}`. Response `202`: `{"run_id"
 ## GET /api/metrics, /api/detectors, /api/experiments
 Response shapes to be defined with implementation; values must come from real runs or be `null`.
 
+## Optional: GET /api/integrity/verify (PLANNED, only with the hash-chain extension)
+Response `200`: `{"valid":true,"checked":1234,"first_break":null}` or `{"valid":false,"first_break":57}`. Read-only.
+
 ## Missing endpoints needed for the prototype
 `POST /api/replay`, `/api/metrics`, `/api/detectors`, `/api/experiments` (all unimplemented until verified).
 

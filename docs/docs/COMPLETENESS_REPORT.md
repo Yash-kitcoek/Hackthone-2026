@@ -14,6 +14,9 @@
 | SIH rules/template | UNVERIFIED |
 | Secrets/PCAPs exposed | None included; docs use 192.0.2.0/24 documentation IPs |
 
+## Update log
+- Theme wording updated; optional hash-chain extension documented (all PLANNED, nothing implemented).
+
 ## Next actions
 1. Provide repo → complete PROJECT_AUDIT.md and correct statuses.
 2. Verify datasets, references and official SIH rules.

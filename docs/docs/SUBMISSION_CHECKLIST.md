@@ -2,7 +2,8 @@
 
 Official SIH 2026 rules, template and deadlines: `UNVERIFIED` — check the portal.
 
-- [ ] Problem ID/title/theme match official catalogue
+- [ ] Problem ID/title match official catalogue; theme = Blockchain & Cybersecurity (confirm wording)
+- [ ] Confirm the portal text does not require a blockchain component; if it does, update ADR-9/ADR-10
 - [ ] Official PPT template and slide limit confirmed
 - [ ] Repo public/accessible as required; no secrets, no sensitive PCAPs
 - [ ] README commands tested from a clean clone
